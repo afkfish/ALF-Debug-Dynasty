@@ -1,0 +1,12 @@
+[Unit]
+Description=SpringBoot ALF application
+After=network.target
+
+[Service]
+User=alf-daemon
+Group=alf-daemon
+ExecStart=/bin/sh -c /usr/bin/java -jar /opt/springboot-alf/SpringBoot-ALF-*.jar
+SuccessExitStatus=143
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,12 @@
+Source: springboot-alf
+Section: utils
+Priority: optional
+Maintainer: DebugDynasty <email@example.com>
+Build-Depends: debhelper (>= 11)
+Standards-Version: 4.5.0
+
+Package: springboot-alf
+Architecture: all
+Depends: openjdk-17-jre
+Description: Spring Boot Application
+ This is a Spring Boot Application for a simple REST API.

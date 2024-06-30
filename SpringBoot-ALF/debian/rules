@@ -1,0 +1,7 @@
+#!/usr/bin/make -f
+%:
+	dh $@ --with systemd --parallel
+override_dh_install:
+	dh_install
+override_dh_installinit:
+	dh_installinit

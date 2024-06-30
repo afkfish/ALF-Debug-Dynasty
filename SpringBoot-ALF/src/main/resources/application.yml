@@ -1,0 +1,30 @@
+server:
+  port: 8080
+  ssl:
+    key-store: classpath:keystore/alf.p12
+    key-store-type: PKCS12
+    key-store-password: debug-dynasty
+    key-alias: alf
+    enabled: true
+
+#spring:
+#  security:
+#    oauth2:
+#      resourceserver:
+#        jwt:
+#          issuer-uri: http://localhost:9000
+spring:
+  data:
+    rest:
+      detection-strategy: annotated
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: debug.dynasy@gmail.com
+    password: athjojxxnudcevuy
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true

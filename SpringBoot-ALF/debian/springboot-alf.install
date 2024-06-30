@@ -1,0 +1,4 @@
+build/libs/*.jar opt/springboot-alf/
+debian/springboot-alf.service /lib/systemd/system/
+debian/boot-alf /etc/init.d/
+debian/boot-alf usr/bin/
